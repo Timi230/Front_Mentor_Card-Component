@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 1300px;
+    height: 446px;
+    margin: auto;
+    margin-top: 15%;
+    
+    border-radius: 1em;
+    
+    background: $card-background;
+
+    @include mobile-only{
+        flex-direction: column;
+        text-align: center;
+
+        width: 350px;
+        height: auto;
+    }
+ 
+}

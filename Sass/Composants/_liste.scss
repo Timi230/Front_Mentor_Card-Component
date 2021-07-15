@@ -1,0 +1,39 @@
+.stats{
+    list-style: none;
+    display: flex;
+
+    justify-content: space-between;
+    margin: auto;
+
+    padding-left: 0;
+
+    &--text{
+        font-family: "Lexend";
+        text-transform: uppercase;
+        font-size: 17px;
+        color: $stats;
+    }
+
+    &--titre{
+        font-family: "Inter";
+        font-size: 27px;
+        color: $sats-heading;
+
+        @include mobile-only{
+            
+        
+        }
+    }
+
+    @include mobile-only{
+        flex-direction: column;
+        padding-bottom: 2em;
+    }
+    
+}
+
+@include mobile-only{
+    li{
+        padding-bottom: 3em;
+    }
+}
