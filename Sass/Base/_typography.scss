@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../../public/styles/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url(../../public/styles/Lexend_Deca/LexendDeca-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter-Regluar";
+    src: url(../../public/styles/Inter/static/Inter-Medium.ttf);
+}
+
+h1{
+    font-family: "Inter";
+    font-size: 40px;
+    color: $main-heading;
+
+    @include mobile-only{
+        font-size: 30px;
+    }
+    
+} 
+
+p{
+    font-family: "Lexend";
+    font-size: 17px;
+    color: $main-paragraph;
+    padding: 1em 0 2em 0;
+    line-height: 30px;
+}
